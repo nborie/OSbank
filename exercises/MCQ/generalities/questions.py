@@ -39,3 +39,4 @@
   programmes exécutés en même temps.
 + Demander de la mémoire pérenne supplémentaire dans un programme C
   (avec malloc).
+

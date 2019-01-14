@@ -11,6 +11,8 @@ cas et que ce texte apparait ; alors le template qcm.pl n'est pas utilisé
 correctement.
 ==
 
+@ /utils/sandboxio.py
+
 builder=@ qcm_build.py
 grader=@ qcm_evaluator.py
 
