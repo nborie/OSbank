@@ -8,7 +8,7 @@
 - Il détecte les erreurs de syntaxe dans un code source C.
 - Il est responsable de la détection des variables Python non
   utilisées afin de prévoir leur libération.
-+ Il gère les entrées/sorties et les interactions avec le nomde extérieur.
++ Il gère les entrées/sorties et les interactions avec le monde extérieur.
 + Il propose des interfaces de haut niveau avec les ressources matériels.
 + Il cache les spécificités matériels du hardware (avec des pilotes).
 + Il permet un partage judicieux des ressources entre les utilisateurs.
@@ -40,3 +40,15 @@
 + Demander de la mémoire pérenne supplémentaire dans un programme C
   (avec malloc).
 
+* Quels sont les organes vitaux et minimaux d'un ordinateur (un
+  ordinateur ne peut ainsi pas fonctionner sans ces organes) ?
+- une souris
+- un écran
+- une imprimante
+- un clavier
+- un respirateur artificiel
+- un défibrillateur
+- une chaise
++ un microprocesseur central
++ de la mémoire vive
++ une carte mère
