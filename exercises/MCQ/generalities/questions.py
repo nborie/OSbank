@@ -122,3 +122,34 @@
 + Virtualisation les mémoires pour les partager efficacement.
 + Structuration, organisation et maintenance des données pérennes.
 + Mécanisme de sécurité, de mise à jour et de diagnostique.
+
+
+* Quels sont les spécificités des systèmes d'exploitation de type Unix ?
+- Unix ne propose que des sessions graphiques.
+- Un seul utilisateur peut se loger à la fois.
+- Unix augmente les capacités des barrettes mémoires.
+- Le développement d'Unix est focalisé sur le user-friendly au détriment de la robustesse.
+- Unix tente de cacher les bogues pour éviter la mauvaise pub.
+- Le code source de ces systèmes est ouvert.
++ Unix attribut des droits spécifiques à tous les fichiers ainsi qu'aux processus.
++ Ils sont multi-utilisateurs et multi-tâches.
++ Tout est fichier en Unix.
++ Ils sont très largement écrit avec le langage C.
++ Ils sont apparus vers 1970.
++ La philosophie d'Unix est de proposer des programmes basiques mais
+  robustes pouvant se combiner très facilement.
+
+
+* Quels sont les conséquences de l'idée de Von Neumann de mélanger les
+  données et les programmes dans la mémoire et de les considérer sur
+  un pied d'égalité ?
+- Paf, ça fait des chocapics !
+- Ça permet de limiter l'énergie utiliser par la RAM.
+- Ça permet d'augmenter la cadence du CPU (overclocking).
+- Ça limite la latence lors des chargements (lags).
++ Ça permet de faire des programme prenant en argument d'autre programme.
+* Ça permet de considérer des programmes qui fabriquent d'autres programmes.
++ Ça permet une montée en puissance des fonctionnalités via des
+  niveaux d'abstraction : compilateur, bibliothèque bas-niveau,
+  framework évolué, application haut niveau (différent langage et
+  traduction d'un niveau à un autre).
