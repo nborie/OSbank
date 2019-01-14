@@ -18,6 +18,7 @@
 + Il fait l'interface entre le matériel (hardware) et les logiciels
   applicatifs (software).
 
+
 * Parmi les opérations informatiques suivantes, laquelle(lesquels)
   sollicite(nt) le système d'exploitation ?
 - Changer la pile de carte mère alimentant la puce du BIOS.
@@ -40,8 +41,10 @@
 + Demander de la mémoire pérenne supplémentaire dans un programme C
   (avec malloc).
 
-* Quels sont les organes vitaux et minimaux d'un ordinateur (un
-  ordinateur ne peut ainsi pas fonctionner sans ces organes) ?
+
+* Parmi les organes matériels suivant, lequel ou lesquels sont vitaux
+  pour un ordinateur (un ordinateur ne pourrait ainsi pas fonctionner
+  sans un de ces organes) ?
 - une souris
 - un écran
 - une imprimante
@@ -52,3 +55,26 @@
 + un microprocesseur central
 + de la mémoire vive
 + une carte mère
+
+
+* De nos jours, les microprocesseurs contiennent dans leur coeur
+- soit 2, soit 4 transistors
+- une dizaine de transistors
+- jamais plus de 128 transistors
+- quelques centaines de transistors
++ autour d'un milliard de transistors
+
+
+* Cochez les caractéristiques possédés par la mémoire vive d'un
+  ordinateur
+- C'est une mémoire lente en lecture.
+- Cette mémoire utilise des disques magnétiques tournant à haute vitesse.
+- Cette mémoire reste pérenne même si elle n'est plus sous tension.
+- C'est la mémoire qu'on trouve en plus grande capacité dans un ordinateur.
+- Cette mémoire à besoin d'être rembobinée avant utilisation.
++ C'est la mémoire principalement utilisé lors de la réalisation de calculs.
++ Chaque morceau ou cellule de cette mémoire est accessible directement via son adresse.
++ Les ordinateurs en comporte plusieurs GigaOctets de nos jours.
++ Cette mémoire est montée sur des barrettes amovibles clipsées sur carte mère.
+
+
