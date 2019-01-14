@@ -24,7 +24,7 @@
 - Changer la pile de carte mère alimentant la puce du BIOS.
 - Nettoyer les circuits imprimés et les dissipateurs de chaleurs avec
   de l'air pulsé.
-- Changer une touche du clavier cassé.
+- Changer une touche non fonctionnelle du clavier.
 - Calculer la complexité d'un algorithme de tri.
 - Établir une bijection entre les nombres binaire sur 32 bits et les
   entiers positifs plus petits que 4294967296.
@@ -74,7 +74,51 @@
 - Cette mémoire à besoin d'être rembobinée avant utilisation.
 + C'est la mémoire principalement utilisé lors de la réalisation de calculs.
 + Chaque morceau ou cellule de cette mémoire est accessible directement via son adresse.
-+ Les ordinateurs en comporte plusieurs GigaOctets de nos jours.
++ Les ordinateurs en comportent plusieurs GigaOctets de nos jours.
 + Cette mémoire est montée sur des barrettes amovibles clipsées sur carte mère.
 
 
+* Quels sont les objectifs d'un système d'exploitation ?
+- Éviter que la souris attrape des puces.
+- Assurer que l'écran ne chauffe pas trop.
+- Augmenter la durée de vie des cartouches d'encres en limitant l'encre utilisée.
+- Augmenter les bénéfices sans revaloriser les salaires.
+- Empêcher les pauvres de devenir riche.
++ Être le plus léger possible pour ne pas alourdir les tâches de calculs.
++ Faire en sorte que les données soient toujours cohérentes.
++ Virtualise les ressources et les attribue comme un chef d'orchestre.
++ Sécuriser le matériel et rattraper les erreurs non critique.
++ Permettre le partage de ses ressources.
++ Augmenter l'expérience de l'utilisateur en interagissant efficacement avec le monde extérieur.
++ Proposer des interfaces standardisés pour chaque ressource.
+
+
+* Parmi les logiciels suivants, lesquels sont des systèmes d'exploitation
+- Photoshop
+- Powerpoint
+- Excel
+- PostgreSQL
+- Le capitalisme
+- Chrome
+- Opéra
+- Firefox
+- Konqueror
+- L'éducation nationale française
++ Unix
++ Linux
++ Mac OS X
++ Windows
+
+
+* Que contient un système d'exploitation en termes logiciels ?
+- Des algorithmes de traitement d'images.
+- Des lecteurs de fichiers mp3.
+- Des MMORPG.
+- Un synthétiseur vocal.
+- Le code du travail.
++ Des piles et des files pour collecter des tâches et des événements.
++ Des mémoires tampons et des buffers un peu partout.
++ Des mécanismes de gestion de la temporalité.
++ Virtualisation les mémoires pour les partager efficacement.
++ Structuration, organisation et maintenance des données pérennes.
++ Mécanisme de sécurité, de mise à jour et de diagnostique.
