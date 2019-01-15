@@ -153,3 +153,16 @@
   niveaux d'abstraction : compilateur, bibliothèque bas-niveau,
   framework évolué, application haut niveau (différent langage et
   traduction d'un niveau à un autre).
+
+
+* Quelles sont les caractéristiques d'une unité arithmétique et logique ?
+- Elle permet de connecter l'ordinateur à internet.
+- Elle évite les fuites mémoires dans les gros programmes.
+- Elle est responsable de la mise à jour du système.
+- Elle facilite la portabilité des codes sources entre les systèmes.
+- Elle diminue la complexité des algorithmes de tris.
++ Elle possèdent des jeux d'instructions basiques pouvant être exécutés très rapidement.
++ Elle manipule des mots machines de taille 64 bits ou plus de nos jours.
++ Elle exploite des registres et mémoires caches très proche physiquement de ces circuits.
++ Elle ne manipule que des données numériques binaires.
+
