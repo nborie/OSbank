@@ -166,3 +166,10 @@
 + Elle exploite des registres et mémoires caches très proche physiquement de ces circuits.
 + Elle ne manipule que des données numériques binaires.
 
+
+* Quels sont les éléments définissant l'architecture de Von Neumann
+- Le processeur, la carte mère, la mémoire vive et le couple clavier/écran.
+- L'unité centrale, l'écran, le clavier et la souris.
+- L'unité arithmétique et logique, la mémoire vive, la mémoire morte et les entrées/sorties.
+- L'unité arithmétique et logique, la mémoire, le quartz cadenceur et le bus central.
++ L'unité arithmétique et logique, l'unité de contrôle, la mémoire et les entrées/sorties.
