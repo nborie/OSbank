@@ -148,7 +148,7 @@
 - Ça permet d'augmenter la cadence du CPU (overclocking).
 - Ça limite la latence lors des chargements (lags).
 + Ça permet de faire des programme prenant en argument d'autre programme.
-* Ça permet de considérer des programmes qui fabriquent d'autres programmes.
++ Ça permet de considérer des programmes qui fabriquent d'autres programmes.
 + Ça permet une montée en puissance des fonctionnalités via des
   niveaux d'abstraction : compilateur, bibliothèque bas-niveau,
   framework évolué, application haut niveau (différent langage et
@@ -173,3 +173,4 @@
 - L'unité arithmétique et logique, la mémoire vive, la mémoire morte et les entrées/sorties.
 - L'unité arithmétique et logique, la mémoire, le quartz cadenceur et le bus central.
 + L'unité arithmétique et logique, l'unité de contrôle, la mémoire et les entrées/sorties.
+
