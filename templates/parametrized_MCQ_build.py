@@ -5,35 +5,6 @@ import sys
 import json
 import random
 
-class Question():
-    """
-    A class to model the notion of questions with multiple choice.
-    """
-    def __init__(self, text, goods, bads):
-        """
-        Initialize a question with its `text` : the question, with a list of 
-        good answers `goods` together with a list of bad answers `bads`.
-        
-        `text` is supposed to be a Python string.
-        `goods` is supposed to be a list of Python strings.
-        `bads` is supposed to be a list of Python strings.
-        """
-        self._text = text
-        if goods is not None:
-            self._goods = goods
-        else:
-            self._goods = []
-        if bads is not None:
-            self._bads = bads
-        else:
-            self._bads = []
-        
-    def __str__(self):
-        """
-        Returns a string describing `self` : i.e. a question.
-        """
-        return "A question with mutiple possible choice"
-
 
 def ParseQuestion(open_file):
     """
@@ -64,7 +35,7 @@ def ParseQuestion(open_file):
                 # In this case, the new item is a new question
                 # It is time to insert a potential question
                 if text is not None:
-                    MCQ_lst.append(Question(text, goods, bads))
+                    MCQ_lst.append([text, goods, bads])
                     text = None
                     goods = []
                     bads = []
@@ -123,48 +94,30 @@ if __name__ == "__main__":
     # The parsing is done here
     file_question = open(file_question_name, "r")
     question_lst = ParseQuestion(file_question)
+    context['mcq'] = question_lst
     
-    # Time to select the question
-    if 'question_index' in context:
-        index = int(context['question_index'])
-        if index < 0 or index >= len(question_lst):
-            context['text'] = ("Cet exercice solicite une question dont via "
-            "un index qui ne correspond à aucune entrée dans le fichier de "
-            "questions.")
-            sys.exit(1)
+    # Set the number of questions in this MCQ
+    if 'number_question' in context:
+        number_of_mcq = int(context['number_question'])
+        # By security, one can not have more questions than availlable.
+        number_of_mcq = min(number_of_mcq, len(context['mcq']))
     else:
-        index = random.randint(0, len(question_lst)-1)
-    question = question_lst[index]
+        number_of_mcq = len(context['mcq']) // 2
     
-    context['text'] = ""
-    context['form'] = ""
-    context['goods'] = []
-    context['bads'] = []
+    # Set the text at begining of MCQ
+    if number_of_mcq > 1:
+        context['text'] = "Cliquez pour entammer une série de " + str(number_of_mcq) + " questions !"
+    elif number_of_mcq == 1:
+        context['text'] = "Cliquez pour accèder à la question !"
+    else:
+        context['text'] = "Aucune question n'a pu être préparée ou selectionnée : veuillez vérifier votre fichier de questions !"
     
-    context['text'] += question._text+"\n\n"
+    # Selection of the indices of the questions
+    context['indices_questions'] = knuth_mixing(subset_index(len(context['mcq']), number_of_mcq))
     
-    # Total possible option and random combination
-    max_answer = 8 # This bounds the number of option if there are more
-    min_answer = 4 # This minimizes the number of option  
-    total = len(question._goods) + len(question._bads)
-    max_option = min(max_answer, total)
-    min_option = min(min_answer, total)
-    nb_option = random.randint(min_option, max_option)
-    indices = knuth_mixing(subset_index(total, nb_option))
-    
-    # generation of the form
-    for index in indices:
-        if index < len(question._goods):
-            context['goods'].append(str(index))
-            context['form'] +='<input type="checkbox" name="c_' + str(index) + \
-            '" value="' + str(index) + '" id="form_' + str(index) + '">' + \
-            question._goods[index] + "<br />"
-        else:
-            context['bads'].append(str(index))
-            context['form'] +='<input type="checkbox" name="c_' + str(index) + \
-            '" value="' + str(index) + '" id="form_' + str(index) + '">' + \
-            question._bads[index - len(question._goods)] + "<br />"
-            
+    context['grade_questions'] = []
+    context['form'] = " "
+    context['clic'] = 0
     
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
