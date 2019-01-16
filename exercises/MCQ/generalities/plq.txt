@@ -1,0 +1,300 @@
+**[indicative, id=positifs,first] Des nombres suivants lesquels sont positifs ?
+- -2
++ 2
++ 10
++ 4
+- -6
+
+
+*[indicative] Sur une échelle de 1 à 4 indiquez la difficulté de ce qcm :
++ 1
+- 2
+- 3
+- 4
+
+
+** Indiquer parmi les opérations suivantes celle qui ne vous semble pas être réalisable par un processeur typique
+- additionner deux entiers
+- comparer deux entiers
++ trouver le minimum d'une liste d'entiers
+- écrire une valeur en mémoire
+
+* Un processeur actuel exécute de l'ordre de
+- cent mille instructions par seconde
+- dix millions d'instructions par seconde
++ dix milliard d'instructions par seconde
+- mille milliards d'instructions par secondes
+
+
+*[next] On dispose de n objets de poids P1, P2, ..., Pn et d'une voiture qui peut transporter un poids d'au plus 800 kg. On suppose que le volume n'est pas un problème et on veut charger la voiture au maximum, c'est à dire au plus près de 800 kg mais pas plus. On procède par énumération : on examine chaque sous-ensemble des objets tour à tour et on calcule la somme des poids de ces objets. Le nombre de configurations à examiner est
+- $2*n$ deux n
+- $n^2$ n au caré
++ $2^n$ 2 puissance n
+- $n!$ n factoriel
+
+* On dispose de n objets de poids P1, P2, ..., Pn et d'une voiture qui peut transporter un poids d'au plus 800 kg. On suppose que le volume n'est pas un problème et on veut charger la voiture au maximum, c'est à dire au plus près de 800 kg mais pas plus. On procède par énumération : on examine chaque sous-ensemble des objets tour à tour et on calcule la somme des poids de ces objets. On suppose que l'algorithme traite une entrée de taille 50 en 20 minutes. Combien de temps met-elle pour traiter une entrée de taille 51 ?
+- à peu près 21 minutes
+- à peu près 30 minutes
++ à peu près 40 minutes
+- à peu près 6 heures
+- à peu près 12 heures
+- à peu près 18 heures
+- à peu près 20 ans
+- quelques milliers d'années
+
+
+
+*[indicative]   L'acronyme AI correspond à :
+- Artificial Interactions
+- Artefact Interactions
++ Artificial Intelligence
+- Artefact Intelligence
+
+* Le raisonnement supporte la déduction de données
+- explicites depuis des données implicites
++ implicites depuis des données explicites
+- implicites depuis des données implicites
+- explicites depuis des données explicites
+
+* Les derniers résultats positifs de l’AI sont principalement liés
+- au phénomène de déluge des données
++ à l’accélération de la vitesse de calcul des processeurs
+- à une meilleure interface homme-machine
+- à la collaboration mondiale des joueurs de Pokemon Go
+
+* L’opinion générale sur l’AI est actuellement
+- un consensus sur son échec proche
+- un consensus sur un accès à une super intelligence dans les 5 ans à venir
++ partagée entre des enthousiastes (sur son succès) et des alarmistes (qui mettent en évidence son danger potentiel)
+- indifférent
+
+* Le Web sémantique correspond :
+- à une réécriture complète du Web actuel
++ à une extension du web actuel
+- à une généralisation de la notion d'intranet
+- à une spécialisation de la notion d'extranet
+
+
+* L'objectif de l'intelligence artificielle
+- est la science de l'extension de l'intelligence humaine
+- est de développer des programmes permettant aux machines de nous compendre
+- est de développer des programmes nous permettant de comprendre les machines
++ est de permettre aux machines de résoudre des tâches que nous considérons comme nécessitant une forme d'intelligence.
+
+** Quelles sont les langues naturelle parmis ces langues
+- langage de programmation
++ langue que nous parlons
++ langue que nous écrivons
+- langue des signes
++ Le Chinois
+- Python
+- Langage des fleurs
+
+
+** Selectionner les mots qui sont des ambiguïtés
++ voler
+- ordinateur
++ avoir du pain sur la planche
+- carte de visite
+
+
+** Comment peut-on définir un mot ?
++ suite des caractères
+- suite des séquences d'idéogrammes
+- suite de codes
++ suite de mots avec un sens particulier
+
+
+** Quel est l'intérêt et les utilisations de l'extraction d'information
++ Big data
++ Création de formulaires
+- Création des bases de données
+- Codage d'un programme informatique
+
+
+** Quelles méthodes sont utilisées pour l'extraction d'information ?
++ Hybride
++ Linguistique
+- Mathématique
+- Scientifique
+
+
+** Parmi les personnalités suivantes, laquelle ou lesquelles vous ont fait une présentation ?
++ Revuz Dominique
+- Pierre Alain
+- Angeliki Foustoukalis
+- Claire Meyer
++ Venceslas Biri
+- Perrin Dominique
+
+
+** La prise de note manuscrite
++ est une aide à la mémorisation.
++ est un outil pour réussir sa vie étudiante et professionnelle.
++ développe les facultés d'analyse et d'abstraction.
+- est inefficace,  il faut mieux tout saisir sur un ordinateur.
+- est inefficace, il faut mieux utiliser les notes d'un autre (regroupement).
++ est une aide à la concentration.
+
+** Un corpus annoté ?
+- est un ensemble d'entités nommées.
++ est un ensemble de documents annotés.
+- est un document qu'il faut noter.
+- est un document contenant des balises.
+- est un ensemble de copies notées.
+
+
+** Ce qui pose problème avec les entités nommées ? C'est qu'elles ...
++ sont multiformes : la même entité nommée peut apparaître sous plusieurs formes.
++ ne sont pas naturellement dans les dictionnaires.
+- représentent quelque chose.
+- doivent avoir des balises, surtout quand il y a plusieurs mots.
+
+
+** Parmi disciplines quelles sont celles qui vous ont été présentées comme faisant parties de l'informatique de l'image :
++ Géométrie Discrète
+- Géométrie Euclidienne
++ Traitement de l'image
++ vision par ordinateur
++ Synthèse d'image
+- Numérisation
+- Graphilogie Numérique
+
+
+** En quoi consiste le modèle de stockage classique sur 3 octets :
++ à stocker trois valeurs sur 8 bits dans 3 octets donnant l'intensité des trois couleurs Rouge, Vert, Bleu.
+- à stocker dans trois octets Heures, Minutes, Secondes, d’où le code HMS.
+- à stocker trois valeurs sur 8 bits dans 3 octets donnant le code PHL : la Profondeur, la Hauteur et la Largeur.
+- à stocker les dates dans trois valeurs octales Jours, Mois, Années.
+
+
+** Parmi les termes suivants, lesquels, sont liés à un algorithme global de rendu graphique sur un écran ?
++ Le lancé de rayon.
++ La rasterisation.
+- La vectorisation.
+- La mondialisation.
+- Le laché de crayon.
+- La mémoïsation.
+- La cybernétique.
+
+
+* Comment code t'on habituellement un pixel coloré d'une image
+- Avec 1 nombre entier compris entre 0 et 255
+- Avec 1 nombre réel compris entre 0 et 1
++ Avec 3 nombres entiers compris entre 0 et 255
+- Avec 4 nombres réel compris entre 0 et 1
+
+* Qu'est ce que la résolution d'une image ?
+- Le nombre de canal de couleur.
+- Le nombre de pixel en largeur.
++ Le nombre de pixel total de l'image.
+- Le nombre de pixel en hauteur.
+- Le nombre de pixel en largeur plus le nombre de pixel en hauteur.
+
+* Sachant qu'une image fait 8 pixels de large et de hauteur, quel est l'indice, dans le tableau unidimensionnel représentant l'image, d'un pixel situé à la 4ème ligne (d'indice 3) de la 3ème colonne (d'indice 2) ?
+- 9
+- 12
++ 27
+- 34
+
+
+
+** Le web sémantique propose
+- de donner du sens au web.
+- d'extraire les informations pertinentes du web.
+- de transformer internet en IA.
+- rendre le web plus SOLIDE\,: Stable, Operational, Liberal, Intelligent, Direct, Efficient.
+- gérer intelligemment les politiques publiques d'internet.
+
+
+** Quelle est la définition de l'intelligence artificielle ?
+- Les logiciels non programmables.
+- L'intelligence artificielle est une intelligence pas réelle.
+- IA est une définition dangereuse.
+- L'IA est une perversion de l'informatique.
+- Une personne intelligente mais artificielle.
+
+
+** Pourquoi l'université a choisi linux comme système d'exploitation\,:
++ Parce que c'est gratuit.
++ Parce que c'est ouvert (lecture et modification du code possible).
++ Parce que cela coûte moins cher en maintenance.
++ Parce que cela marche sur les différentes plate-forme matérielles.
++ Parce que il existe de nombreux logiciels gratuits qui ne tournent que sur ce système.
+- Parce que cela permer de casser les pieds aux étudiants.
+
+
+** Que signifie "répertoire personnel" dans un système d'exploitation Linux ?
+- C'est la liste des contacts (nom, adresse et numéro de téléphone) d'un utilisateur du réseau.
++ C'est l'emplacement où sont stockés les fichiers et répertoires possèdés par un utilisateur.
+- C'est le répertoire qui contient tous les autres répertoires dans l'ordinateur.
+- C'est un répertoire appelé "personnel".
+
+** Qu'est-ce qu'un éditeur de texte ?
+- Un logiciel servant à mettre en page divers documents (articles, cartes de voeux...) à l'aide de boutons adaptés (police, taille de texte, couleur...).
+- Une personne dont le métier consiste à corriger des articles scientifiques.
++ Un logiciel permettant de créer des fichiers contenant du texte non formaté, par exemple des programmes.
+- Une application permettant de contrôler l'ordinateur à l'aide de commandes.
+
+** Comment est formée votre adresse de messagerie à l'université ?
+- Votre nom de [*login*] suivi du caractère [*@*] suivi de [*etud.univ-mlv.fr*].
++ Votre nom de [*login*] suivi du caractère [*@*] suivi de [*etud.u-pem.fr*].
+- Votre prénom et votre nom séparés par un point, et suivis de [*@etud.u-pem.fr*].
+- Votre nom de [*login*] suivi de [*@gmail.com*].
+
+**  À quoi sert le terminal ?
++ À donner des ordres à la machine sous la forme de commandes.
++ À explorer le système de fichiers.
+- À accéder aux icônes des programmes pour les lancer d'un seul clic.
+- À rien, l'interface graphique permet de tout faire.
+
+
+
+**[absolu] Lesquels de ces chemins sont des chemins absolus ?
++ [_/_]
++ [_/home/drevuz/../cdavid/ISI/_]
+- [_../Images_]
+- [_ISI/TP/06_]
+
+
+** À quoi sert une archive compressée créée par la commande zip ?
++ À stocker des données en prenant moins d'espace.
+- À conserver les données intactes plus longtemps.
+- À être compatible avec le catalogue national des bibliothèques.
++ À rassembler plusieurs fichiers en un seul.
+
+
+* qu'est-ce qu'une carte en anamorphose ?
++ une carte déformée pour refléter un critère donné
+- une carte découpée en diverses régions qui correspondent aux points les plus proches d'un ensemble de points de référence
+- une carte colorée en fonction de la densité d'un critère donné
+- une carte recouverte de points dont la taille est proportionnelle à un critère donné
+- une carte formée en combinant plusieurs pixels de couleurs
+- une carte en trois dimensions
+
+* qu'appelle-t-on des données ouvertes ?
++ des données qui sont diffusées de manière structurée dans des conditions permettant leur réutilisation
+- des données qui sont diffusées dans des formats utilisables par les logiciels libres
+- des données qui étaient confidentielles et qui ont été piratées
+- des données qui étaient confidentielles et qui ont été mises sur internet par le gouvernement
+- des données qui sont diffusées dans au moins 5 formats ouverts (CSV, XML, PDF, etc.)
+
+* quels outils peut-on utiliser pour visualiser des données ouvertes ?
++ des bibliothèques Javascript
+- des langages PHP
+- des bases de données SQM
+- des macros Word
+- des scripts Err
+- des programmes JSON
+- des devices Android
+- des flux RSS
+
+
+* quelle compétence vous semble la moins utile pour participer à un hackathon ?
++la méticulosité pour coder un programme qui traite avec exactitude toutes les données mises à disposition
+- l'autonomie pour avancer seul sur certaines tâches
+- l'esprit d'équipe pour travailler ensemble sur un projet commun
+- le pragmatisme pour obtenir un prototype pas nécessairement fonctionnel à cent pour cent
+- l'écoute pour prendre en compte les idées du reste de l'équipe
+
+
