@@ -6,7 +6,7 @@ tag=system
 
 template=/templates/qcm.pl
 
-@ /exercises/MCQ/generalities/questions.py
-data_from_file=questions.py
+@ /exercises/MCQ/generalities/questions.py [questions.txt]
+data_from_file=questions.txt
 
 

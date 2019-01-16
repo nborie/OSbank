@@ -1,7 +1,7 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
-author=Nicolas Borie
+author=Nicolas Borie & Dominique Revuz
 
-title=Généralités sur la Syntaxe pl
+title=Exam de ISI
 tag=system
 
 template=/templates/qcm.pl
