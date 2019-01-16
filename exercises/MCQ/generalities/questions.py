@@ -103,7 +103,7 @@
 - Opéra
 - Firefox
 - Konqueror
-- L'éducation nationale française
+- L'éducation nationale
 + Unix
 + Linux
 + Mac OS X
