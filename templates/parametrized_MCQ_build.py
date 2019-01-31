@@ -1,15 +1,31 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
+#*****************************************************************************
+#       Copyright (C) 2019 Nicolas Borie <nicolas dot borie at u-pem . fr>
+#
+#  Distributed under the terms of the GNU General Public License (GPL)
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#    General Public License for more details.
+#
+#  The full text of the GPL is available at:
+#
+#                  http://www.gnu.org/licenses/
+#*****************************************************************************
+
 import sys
 import json
 import random
+from utils import subset_index, knuth_mixing
 
 
 def ParseQuestion(open_file):
     """
     Parse a Python open file of formated questions in AMC style and return a 
-    list of instance of class Question.
+    list of parsed questions with theirs answer.
     """
     text = None
     goods = []
@@ -48,31 +64,6 @@ def ParseQuestion(open_file):
             current += line
     return MCQ_lst
 
-
-def subset_index(n, p):
-    """
-    Returns a random subset of {0, ..., `n-1`} of size `p`
-    """
-    lst = []
-    while (n >= p and p > 0):
-        if random.randint(1, n) <= p:
-            lst.append(n-1)
-            p = p-1
-        n = n-1
-    return lst
-
-
-def knuth_mixing(lst):
-    """
-    Mix in place element of the list `lst` in argument.
-    """
-    for i in range(len(lst)-1, 0, -1):
-        j = random.randint(0, i)
-        if j != i:
-            lst[i], lst[j] = lst[j], lst[i]
-    return lst
-
-
 if __name__ == "__main__":
     """
     This programm generate a nice Multiple Choice formulary from the context 
@@ -92,8 +83,8 @@ if __name__ == "__main__":
         sys.exit(1)
     
     # The parsing is done here
-    file_question = open(file_question_name, "r")
-    question_lst = ParseQuestion(file_question)
+    with open(file_question_name, "r") as file_question :
+        question_lst = ParseQuestion(file_question)
     context['mcq'] = question_lst
     
     # Set the number of questions in this MCQ
@@ -125,4 +116,6 @@ if __name__ == "__main__":
     sys.exit(0)
 
 sys.exit(0)
+
+
 

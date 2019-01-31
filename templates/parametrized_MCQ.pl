@@ -11,10 +11,12 @@ cas et que ce texte apparait ; alors le template parametrized_MCQ.pl n'est pas
 utilisé correctement.
 ==
 
-@ /utils/sandboxio.py
+@ lib:/utils/sandboxio.py
+@ /templates/utils.py
 
 builder=@ parametrized_MCQ_build.py
 grader=@ parametrized_MCQ_evaluator.py
 
 data_from_file=None
+
 

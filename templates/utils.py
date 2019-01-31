@@ -15,6 +15,9 @@
 #
 #                  http://www.gnu.org/licenses/
 #*****************************************************************************
+
+import random
+
 """
 This module utils.py implement some miscellaneous functionalities for 
 exercices generation.
