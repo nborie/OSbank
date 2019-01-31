@@ -1,33 +1,25 @@
 #!/usr/bin/env python3
 # coding: utf-8
+
+#*****************************************************************************
+#       Copyright (C) 2019 Nicolas Borie <nicolas dot borie at u-pem . fr>
+#
+#  Distributed under the terms of the GNU General Public License (GPL)
+#
+#    This code is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#    General Public License for more details.
+#
+#  The full text of the GPL is available at:
+#
+#                  http://www.gnu.org/licenses/
+#*****************************************************************************
+
 import sys, json
 import random
 from sandboxio import output, get_context, get_answers
-
-
-def subset_index(n, p):
-    """
-    Returns a random subset of {0, ..., `n-1`} of size `p`
-    """
-    lst = []
-    while (n >= p and p > 0):
-        if random.randint(1, n) <= p:
-            lst.append(n-1)
-            p = p-1
-        n = n-1
-    return lst
-
-
-def knuth_mixing(lst):
-    """
-    Mix in place element of the list `lst` in argument.
-    """
-    for i in range(len(lst)-1, 0, -1):
-        j = random.randint(0, i)
-        if j != i:
-            lst[i], lst[j] = lst[j], lst[i]
-    return lst
-    
+from utils import subset_index, knuth_mixing
 
 if __name__ == "__main__":
     with open(sys.argv[1]) as f:
@@ -39,9 +31,9 @@ if __name__ == "__main__":
     f.close()
     
     # time to correct the last question if relevant
-    if context['clic'] > 0:
+    if context['clic'] > 0 or 'goods' in context:
         grade = 0
-        
+        context['text'] = " TROP COOL !!!! <br /><br />"
         ok = 0
         not_ok = 0
         for good in context['goods']:
@@ -57,20 +49,28 @@ if __name__ == "__main__":
         
         grade = 100*ok // (ok+not_ok)
         context['grade_questions'].append(grade)
-    
-    
-    context['text'] = ""
-    context['form'] = ""
+    else:
+        context['text'] = ""
+        context['form'] = ""
     
     # time to prepare the next question
     if len(context['grade_questions']) < len(context['indices_questions']):
+        if (context['clic']) == 1:
+             context['text'] = "WHOUAAAAA !!!!!<br /><br /><br />"
+
         context['clic'] += 1
-        question = context['mcq'][context['indices_questions'][len(context['grade_questions'])]]
+        index_next_q = context['indices_questions'][ len(context['grade_questions']) ]
+        question = context['mcq'][index_next_q]
         
+        context['text'] += str(context['indices_questions'])+"<br /><br /><br />"
+        context['text'] += str( len(context['grade_questions']) )+"<br /><br /><br />"
+        context['text'] += str( context['indices_questions'][ len(context['grade_questions']) ] )+"<br /><br /><br />"
+        context['text'] += str( question )+"<br /><br /><br />"
+
         context['goods'] = []
         context['bads'] = []
         
-        context['text'] += question[0]+"\n\n"
+        context['text'] += question[0] + "<br /><br />"
         
         # Total possible option and random combination
         if 'min_option' in context:
@@ -102,7 +102,7 @@ if __name__ == "__main__":
                 str(index) + '">' + \
                 question[2][index - len(question[1])] + "<br />"
         
-        output(-1, str(context['clic'])+" CLIC<br />"+context['text']+context['form'], context)
+        output(-1, str(context['clic'])+" CLIC<br />", context)
     
     if len(context['grade_questions']) == len(context['indices_questions']):
         grade = 0
@@ -114,5 +114,4 @@ if __name__ == "__main__":
         
         output(grade, feedback, context)
     
-    output(-1, "", context)
-
+    output(-1, "THAT SHOULD NEVER HAPPEN !!!!", context)

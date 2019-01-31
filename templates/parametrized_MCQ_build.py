@@ -21,8 +21,7 @@ import json
 import random
 from utils import subset_index, knuth_mixing
 
-
-def ParseQuestion(open_file):
+def ParseQuestion(opened_file):
     """
     Parse a Python open file of formated questions in AMC style and return a 
     list of parsed questions with theirs answer.
@@ -33,7 +32,7 @@ def ParseQuestion(open_file):
     current = None
     MCQ_lst = []
     # We manually add a last "*" in the parsing to register the last question 
-    for line in open_file.readlines()+["*"]:
+    for line in opened_file.readlines()+["*"]:
         if line[0] in "*+-":
             # We did read a new item
             # First, we register the last item
@@ -93,7 +92,9 @@ if __name__ == "__main__":
         # By security, one can not have more questions than availlable.
         number_of_mcq = min(number_of_mcq, len(context['mcq']))
     else:
-        number_of_mcq = len(context['mcq']) // 2
+        # If the number of question is not given, take half of them 
+        # but no more than 20.
+        number_of_mcq = min(20, len(context['mcq']) // 2)
     
     # Set the text at begining of MCQ
     if number_of_mcq > 1:
@@ -105,17 +106,19 @@ if __name__ == "__main__":
     
     # Selection of the indices of the questions
     context['indices_questions'] = knuth_mixing(subset_index(len(context['mcq']), number_of_mcq))
-    
+    # A key for the grade of different questions
     context['grade_questions'] = []
+    # No form before the first question just a submit to continu
     context['form'] = " "
+
+    # DEBUG : REMOVE ME AFTER....
+    # Hardcode the number of time submit has been clicked 
     context['clic'] = 0
     
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
         
     sys.exit(0)
-
-sys.exit(0)
 
 
 
