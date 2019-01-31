@@ -1,0 +1,36 @@
+* Quelles données ne sont pas binaires dans un ordinateur ?
++ Non, tout est binaire.
+- Les fichiers textes sont constitués de symboles non binaires.
+- Les sons, comme les fichiers mp3, ne sont pas binaires.
+- Certaines images ne sont pas binaires.
+- Les nombres à virgule flottante ne sont pas des données binaires.
+- Les vidéos ne sont pas des données binaires.
+- Les caractères non ASCII, comme un é accentué, ne sont pas binaires.
+
+
+* Comment décomposer un entier en base 2 ?
++ On fait des divisions successives par deux, puis on renverse les restes obtenus.
+- On utilise l'algorithme d'Euclide.
+- Jamais personne n'a réussi à décomposer un nombre en base 2.
+- On multiplie par $2^n$ l'entier pour tout $n$.
+- On utilise $log_2$ la fonction logarithme à base 2.
+- Il faut utiliser la règle du complément à 1.
+
+
+* Combien il y a-t-il de bits dans un octet ?
++ Il y a 8 bits dans un octet.
+- Chaque octet regroupe 10 bits.
+- Il y a exactement 1 bit par octet.
+- Il faut 16 bits pour avoir un octet, c'est pour cela qu'on les écrit en hexadécimal.
+- Quand un octet est incomplet, il peut contenir 2 ou 3 bits seulement.
+
+
+* Quelles sont les déclarations vraies à propos du code ASCII ?
++ Les lettres minuscules et majuscules dont rangées dans l'ordre alphabétique.
++ Un caractère se stocke sur un octet.
++ Les caractères des chiffres sont rangés dans l'ordre.
++ Tous les caractères ne sont pas affichables.
++ ASCII a été inventé par les américains, il n'y ont pas mis les lettres accentuées.
+- On peut tout écrire avec ASCII, notamment toutes les langues parlées sur la terre.
+- Plus un caractère ASCII est compliqué, plus il occupe de place mémoire.
+- ASCII a été inventé il y a une dizaine d'année pour faciliter internet.
