@@ -57,7 +57,7 @@
 + une carte mère
 
 
-* De nos jours, les microprocesseurs contiennent dans leur coeur
+* De nos jours, les microprocesseurs contiennent dans leur coeur ?
 - soit 2, soit 4 transistors
 - une dizaine de transistors
 - jamais plus de 128 transistors
@@ -66,7 +66,7 @@
 
 
 * Cochez les caractéristiques possédés par la mémoire vive d'un
-  ordinateur
+  ordinateur ?
 - C'est une mémoire lente en lecture.
 - Cette mémoire utilise des disques magnétiques tournant à haute vitesse.
 - Cette mémoire reste pérenne même si elle n'est plus sous tension.
@@ -93,7 +93,7 @@
 + Proposer des interfaces standardisés pour chaque ressource.
 
 
-* Parmi les logiciels suivants, lesquels sont des systèmes d'exploitation
+* Parmi les logiciels suivants, lesquels sont des systèmes d'exploitation ?
 - Photoshop
 - Powerpoint
 - Excel
@@ -167,10 +167,11 @@
 + Elle ne manipule que des données numériques binaires.
 
 
-* Quels sont les éléments définissant l'architecture de Von Neumann
+* Quels sont les éléments définissant l'architecture de Von Neumann ?
 - Le processeur, la carte mère, la mémoire vive et le couple clavier/écran.
 - L'unité centrale, l'écran, le clavier et la souris.
 - L'unité arithmétique et logique, la mémoire vive, la mémoire morte et les entrées/sorties.
 - L'unité arithmétique et logique, la mémoire, le quartz cadenceur et le bus central.
 + L'unité arithmétique et logique, l'unité de contrôle, la mémoire et les entrées/sorties.
+
 
