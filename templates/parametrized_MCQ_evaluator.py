@@ -31,9 +31,8 @@ if __name__ == "__main__":
     f.close()
     
     # time to correct the last question if relevant
-    if context['clic'] > 0 or 'goods' in context:
+    if 'goods' in context:
         grade = 0
-        context['text'] = " TROP COOL !!!! <br /><br />"
         ok = 0
         not_ok = 0
         for good in context['goods']:
@@ -49,27 +48,17 @@ if __name__ == "__main__":
         
         grade = 100*ok // (ok+not_ok)
         context['grade_questions'].append(grade)
-    else:
-        context['text'] = ""
-        context['form'] = ""
+    
+    context['text'] = ""
+    context['form'] = ""
     
     # time to prepare the next question
     if len(context['grade_questions']) < len(context['indices_questions']):
-        if (context['clic']) == 1:
-             context['text'] = "WHOUAAAAA !!!!!<br /><br /><br />"
 
-        context['clic'] += 1
         index_next_q = context['indices_questions'][ len(context['grade_questions']) ]
         question = context['mcq'][index_next_q]
-        
-        context['text'] += str(context['indices_questions'])+"<br /><br /><br />"
-        context['text'] += str( len(context['grade_questions']) )+"<br /><br /><br />"
-        context['text'] += str( context['indices_questions'][ len(context['grade_questions']) ] )+"<br /><br /><br />"
-        context['text'] += str( question )+"<br /><br /><br />"
-
         context['goods'] = []
         context['bads'] = []
-        
         context['text'] += question[0] + "<br /><br />"
         
         # Total possible option and random combination
@@ -102,7 +91,7 @@ if __name__ == "__main__":
                 str(index) + '">' + \
                 question[2][index - len(question[1])] + "<br />"
         
-        output(-1, str(context['clic'])+" CLIC<br />", context)
+        output(-1, "", context)
     
     if len(context['grade_questions']) == len(context['indices_questions']):
         grade = 0
@@ -110,7 +99,9 @@ if __name__ == "__main__":
             grade += g
         grade = grade // len(context['grade_questions'])
         
-        feedback = "Vous avez obtenu *" + str(grade) + "%* de réussite à votre QCM."
+        context['form'] = ''
+        context['text'] = ''
+        feedback = "Vous avez obtenu <b>" + str(grade) + "%</b> de réussite à votre QCM."
         
         output(grade, feedback, context)
     

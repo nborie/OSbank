@@ -24,7 +24,7 @@ from utils import subset_index, knuth_mixing
 def ParseQuestion(opened_file):
     """
     Parse a Python open file of formated questions in AMC style and return a 
-    list of parsed questions with theirs answer.
+    list of parsed questions together with theirs answer.
     """
     text = None
     goods = []
@@ -110,15 +110,12 @@ if __name__ == "__main__":
     context['grade_questions'] = []
     # No form before the first question just a submit to continu
     context['form'] = " "
-
-    # DEBUG : REMOVE ME AFTER....
-    # Hardcode the number of time submit has been clicked 
-    context['clic'] = 0
     
     with open(sys.argv[2], 'w+') as f:
         json.dump(context, f)
         
     sys.exit(0)
+
 
 
 
