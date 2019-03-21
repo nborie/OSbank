@@ -19,23 +19,23 @@
   applicatifs (software).
 
 
-* Parmi les opérations informatiques suivantes, laquelle(lesquels)
+* Parmi les opérations informatiques suivantes, laquelle(lesquelles)
   sollicite(nt) le système d'exploitation ?
 - Changer la pile de carte mère alimentant la puce du BIOS.
 - Nettoyer les circuits imprimés et les dissipateurs de chaleurs avec
   de l'air pulsé.
 - Changer une touche non fonctionnelle du clavier.
 - Calculer la complexité d'un algorithme de tri.
-- Établir une bijection entre les nombres binaire sur 32 bits et les
+- Établir une bijection entre les séquences binaire sur 32 bits et les
   entiers positifs plus petits que 4294967296.
-- Vérifier que les bases de données sont structurés en forme normale.
+- Vérifier que les bases de données sont structurées en forme normale.
 - Utiliser une méthode diviser pour régner.
 + Lancer l'exécution d'un programme.
 + Sauvegarder un fichier.
 + Parcourir le contenu d'un répertoire.
 + Bouger le pointeur de la souris à l'écran.
 + Éteindre le système avant une décharge complète d'une batterie
-  Lithium.
+  Lithium et donc sa détérioration.
 + Partager la puissance de calcul du processeur entre plusieurs
   programmes exécutés en même temps.
 + Demander de la mémoire pérenne supplémentaire dans un programme C
@@ -173,5 +173,6 @@
 - L'unité arithmétique et logique, la mémoire vive, la mémoire morte et les entrées/sorties.
 - L'unité arithmétique et logique, la mémoire, le quartz cadenceur et le bus central.
 + L'unité arithmétique et logique, l'unité de contrôle, la mémoire et les entrées/sorties.
+
 
 
