@@ -6,8 +6,8 @@ tag=system
 
 template=/templates/parametrized_MCQ.pl
 
-@ /exercises/MCQ/generalities/questions.py
-data_from_file=questions.py
+@ /exercises/MCQ/generalités_système.txt
+data_from_file=generalités_système.txt
 
 number_question=5
 min_option=4
