@@ -1,5 +1,46 @@
+* Parmi les données suivantes, lesquels sont en binaire dans un
+  ordinateur ?
++ Un fichier audio wav
++ Un fichier audio mp3
++ Une image jpeg
++ Une image png
++ Un entier négatif
++ Un entier positif
++ Le texte intégral de Germinal dans un fichier texte
++ La position du pointeur de la souris
+
+
+* Parmi les nombres binaires suivants, lesquels sont les multiples de 4 ?
+- 10010101
+- 10110111
+- 110010
+- 1
++ 0
++ 100
++ 10100
++ 110100100
++ 10000000
+
+
+* Combien vaut le nombre binaire 1010101 en base 10 ?
+- 12
+- Ce nombre n'existe pas en base 10
+- 105
+- 53
+- 95 
+- 97 ou encore le caractère ascii 'a'
++ 85
+
+
+* Quel est l'écriture en base 2 du nombre écrit en base décimale 77 ?
+- 1101010
+- 1101011
+- 1011101
+- 1101111
++ 1001101
+
 * Quelles données ne sont pas binaires dans un ordinateur ?
-+ Non, tout est binaire.
++ Non, toute donnée est binaire dans nos ordinateurs.
 - Les fichiers textes sont constitués de symboles non binaires.
 - Les sons, comme les fichiers mp3, ne sont pas binaires.
 - Certaines images ne sont pas binaires.
@@ -28,10 +69,10 @@
 * Quelles sont les déclarations vraies à propos du code ASCII ?
 + Les lettres minuscules et majuscules sont rangées dans l'ordre alphabétique.
 + Un caractère se stocke sur un octet.
-+ Les caractères des chiffres sont rangés dans l'ordre.
++ Les caractères associés aux chiffres sont rangés dans l'ordre.
 + Tous les caractères ne sont pas affichables.
 + ASCII a été inventé par les américains, il n'y ont pas mis les lettres accentuées.
-- On peut tout écrire avec ASCII, notamment toutes les langues parlées sur la terre.
+- On peut tout écrire avec ASCII, notamment, toutes les langues parlées sur la terre.
 - Plus un caractère ASCII est compliqué, plus il occupe de place mémoire.
 - ASCII a été inventé il y a une dizaine d'année pour faciliter internet.
 
@@ -71,14 +112,15 @@
   le fait Python.
 - C'est une activité ludique dans laquelle il faut très fortement
   s'impliquer pour gagner.
-- C'est jouer au Monopoly avec des gens énervé.
+- C'est jouer au Monopoly avec des gens énervés.
 - C'est un programme qui affiche des lettres minuscules et majuscules.
 
 
 * Quel sont les avantages pour nos ordinateurs actuels de manipuler du binaire ?
-+ Les électroniciens savent fabriquer des composants performant avec le binaire.
++ Les électroniciens savent fabriquer des composants numériques performants.
 + On fait de l'algorithmique sur les nombres depuis plusieurs millénaires.
 + Il est plus commode de manipuler des nombres que des couleurs ou des sons.
 - C'est pas du tout astucieux, les ordinateurs sont lents et ne font rien.
 - Ça permet de mieux enregistrer et restituer les sons.
-- Les images de code naturellement en binaires.
+- Les images s'encodent naturellement en binaire.
+
