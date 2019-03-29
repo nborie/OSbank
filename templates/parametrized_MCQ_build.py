@@ -24,7 +24,7 @@ from utils import subset_index, knuth_mixing
 def ParseQuestion(opened_file):
     """
     Parse a Python open file of formated questions in AMC style and return a 
-    list of parsed questions together with theirs answer.
+    list of parsed questions together with theirs answers.
     """
     text = None
     goods = []
@@ -115,6 +115,7 @@ if __name__ == "__main__":
         json.dump(context, f)
         
     sys.exit(0)
+
 
 
 
