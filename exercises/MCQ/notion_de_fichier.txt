@@ -36,7 +36,26 @@
 
 * Que peut-on trouver dans l'organisation logique d'un disque dur formaté en Ext4 ?
 - Le bloc print pour exploiter les imprimantes.
+- Un dictionnaire Python des sockets et connexions réseaux.
 - Une liste des répertoires 
 + Un tableau d'inode (certaines sont libres, certaines sont occupées).
 + Des blocs de données de taille fixe pour stocker les fichiers.
-+ Un morceau réverver au système pour le déémarrage de la machine (boot block).
++ Un morceau réservé au système pour le démarrage de la machine (boot block).
+
+* Sélectionner les déclarations correctes sur les modes de bufferisation.
+- La bufferisation totale est appliquée sur l'entrée standard **stdin**.
++ La sortie standard **stdout** est bufferisée par ligne.
++ La sortie standard d'erreur **stderr** n'est pas bufferisée.
+
+* Sélectionner les fonctionalités de redirection valides en Unix.
+- <2
+- ><
+- XD
+- :-;
++ >
++ |
++ >>
++ <
++ <<
++ 2>
++ 2&1>

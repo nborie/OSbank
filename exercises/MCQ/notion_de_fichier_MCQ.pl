@@ -1,7 +1,7 @@
 # Copyright 2019 Nicolas Borie <nicolas.borie@u-pem.fr>
 author=Nicolas Borie
 
-title=Généralités sur les systèmes d'exploitation
+title=Notion de fichier dans les systèmes d'exploitation de type Unix
 tag=system|fichier
 
 template=/templates/parametrized_MCQ.pl
